@@ -1,0 +1,16 @@
+- seperate the procedural noise generator into a different class or function for cleanliness 
+- implement the summed area table algorithm in order to find the largest landmass (can be multiple land masses)
+- it is a dynamic programming solution that fits pretty much all requirements
+- https://en.wikipedia.org/wiki/Summed-area_table
+
+- need to modify or override the noise library to accomodate this. 
+- probably make it build the sum table at the same time as the noise map. Less computations required, because it would just be adding up the previous stored value.
+- current idea is to create a new builder type, that accomodates this idea.
+
+
+
+- implement a 3d voxel generation system where the voxels follows the pattern of the map
+- implement a skin system that takes the voxels and turns it into a full 3d map
+
+
+- Dwarf fortress has a rng based society where the culture develops from player decsisions
